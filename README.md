@@ -28,6 +28,10 @@
 2. 실행 환경 라이브러리를 설치합니다.
    ```bash
    pip install -r requirements.txt
-ITDA_3rd_Baseline.ipynb 내 IMAGE_DIR 경로를 본인의 데이터셋 경로에 맞게 수정하여 실험을 진행합니다.개발 완료 후 predict.py 터미널 명령어가 정상 동작하는지 테스트합니다.Bashpython predict.py --input_dir ./val_images --output_path ./submission.csv
-💡 실행 환경 주의사항 (NumPy 버전 이슈)로컬 아나콘다 환경 실행 중 ImportError: numpy.core.multiarray... 관련 오류가 발생하는 경우, C-Extension 패키지 충돌 방지를 위해 아래 명령어로 NumPy 버전을 조정하고 커널을 재시작해 주세요.Bashpip install "numpy<2"
+ITDA_3rd_Baseline.ipynb 내 IMAGE_DIR 경로를 본인의 데이터셋 경로에 맞게 수정하여 실험을 진행합니다.
+개발 완료 후 predict.py 터미널 명령어가 정상 동작하는지 테스트합니다.Bashpython predict.py --input_dir ./val_images --output_path ./submission.csv
+💡 실행 환경 주의사항 (NumPy 버전 이슈)로컬 아나콘다 환경 실행 중 ImportError: numpy.core.multiarray... 관련 오류가 발생하는 경우, 
+C-Extension 패키지 충돌 방지를 위해 아래 명령어로 NumPy 버전을 조정하고 커널을 재시작해 주세요.
+Bashpip install "numpy<2"
+
 ✉️ 1차 예선 제출 규칙참가자 본인의 GitHub 저장소에 predict.py, requirements.txt, 모델 가중치 파일(필요 시), README.md를 포함하여 저장소 URL과 최종 Commit Hash를 이메일로 제출해야 합니다.제출 파일 생성 규격 (submission.csv) 예시:image_idyearmonthdayval_000120260529val_0002NONENONENONE
